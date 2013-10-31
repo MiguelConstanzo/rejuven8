@@ -1,0 +1,147 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {background-color:#003e53; color: #fff;}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-inverse {background-color:#003e53; border:none;}
+.navbar-inverse .navbar-nav li a {font-family: 'Dosis', sans-serif; font-weight:400; font-size:17px; color:#009eac; padding-left:25px; padding-right:25px;}
+.navbar-wrapper {position: relative; z-index: 15;}
+
+
+/* HERO IMAGE - HEADER
+-------------------------------------------------- */
+.top-line {background-color:#fff; height:4px;}
+
+.header-container {background-color:#040811;}
+
+.hero-responsive-image {background-size: 100% 100%; width:100%;}
+
+
+#home-image {background:url(../images/home-image.jpg) no-repeat; background-size:contain; background-position:center;} /* image 1168px */
+
+#hero-home-lg {background:url(../images/hero_home.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 1200px */
+#hero-home-md {background:url(../images/hero_home.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 992px */
+#hero-home-sm {background:url(../images/hero_home.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 768px */
+#hero-home-xs {background:url(../images/hero_home.jpg) no-repeat; width:100%; height:713px; position:relative;} /* image 320px */
+
+
+
+#hero-cosmetic-surgery {}
+#hero-men {}
+#hero-body {}
+#hero-skin {}
+#hero-cosmetic-tattoo {}
+
+/* HERO CONTENT
+-------------------------------------------------- */
+
+header.header-content {position:relative;}
+
+.logo {background:url(../images/logo.png) no-repeat; width:324px; height:108px; display:block; position:absolute; top:340px;}
+
+
+/* top right box */
+
+.top-right {position:absolute; right:0; top:30px;}
+
+/* social top */
+
+.social-left {padding-right:20px; padding-top:25px;}
+
+.fb-icon {background:url(../images/fb-icon.png) no-repeat; width:19px; height:18px; display:block; margin-bottom:13px; opacity:0.4; filter:alpha(opacity=40);}
+.tt-icon {background:url(../images/tt-icon.png) no-repeat; width:19px; height:16px; display:block; margin-bottom:15px; opacity:0.4; filter:alpha(opacity=40);}
+.em-icon {background:url(../images/email-icon.png) no-repeat; width:19px; height:11px; display:block; opacity:0.4; filter:alpha(opacity=40);)}
+
+.social-hover:hover {opacity:1; filter:alpha(opacity=100);}
+
+/* top right content */
+
+.content-top-right {padding-left:20px; border-left:1px solid #009eac; padding-top:15px;}
+
+/* phone number */
+
+.phone-heading {color:#009eac; font-size:20px; font-family: 'Dosis', sans-serif; font-weight:200; margin:0; line-height:28px;}
+.phone-number {color:#fff; font-size:27px; font-family: 'Lato', sans-serif; font-weight:300; line-height:28px;}
+
+/* corporate menu */
+
+.corporate-menu {list-style:none; padding-left:0; padding-top:30px; padding-bottom:10px; line-height:21px;}
+.corporate-menu li a {font-family: 'Dosis', sans-serif; font-size:14px; color:#009eac; letter-spacing:0.15px;}
+.corporate-menu li a:hover {color:#FFF; text-decoration:none;}
+
+/* search box */
+
+.search-box {background:url(../images/paint_search.png) no-repeat; width:441px; height:155px; position:absolute; right:0; top:325px; padding-top:25px;}
+.search-box h1 {font-family: 'Dosis', sans-serif; font-weight:400; font-size:24px; color:#fff; text-align:center;}
+.search-box h1 span {color:#082a3a; font-weight:800;}
+
+.search-box .form-contanier {width:180px; height:31px; margin:auto; position:relative;}
+.search-box .search-bar {width:180px; margin:auto; border-radius:8px; border:none; font-family: 'Dosis', sans-serif; color:#1b8f98;}
+.search-box .form-control:focus {box-shadow:0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 4px #2D6D86;}
+.search-box .search-btn {background:url(../images/search_btn.png) no-repeat; width:23px; height:17px; border:none; position:absolute; right:10px; top:9px;}
+
+
+/* THUMBNAILS
+-------------------------------------------------- */
+
+.thumbnails-container {position:relative; padding-right:0; padding-left:0;}
+.thumbnails {position:absolute; top:-175px;}
+
+#cosmetic-surgery {background:url(../images/cosmetic_surgery_thumb.png) no-repeat; width:182px; height:170px;}
+#injections {background:url(../images/injections_thumb.png) no-repeat; width:182px; height:170px;}
+#men {background:url(../images/men_thumb.png) no-repeat; width:182px; height:170px;}
+#body {background:url(../images/body_thumb.png) no-repeat; width:182px; height:170px;}
+#skin {background:url(../images/skin_thumb.png) no-repeat; width:182px; height:170px;}
+#tattoo {background:url(../images/tattoo_thumb.png) no-repeat; width:182px; height:170px;}
+
+/* FOOTER
+-------------------------------------------------- */
+
+footer {}
+footer p {text-align:center;}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
